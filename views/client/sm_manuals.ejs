@@ -272,44 +272,28 @@
                 <div class="widget clearfix">
                     <h4>აპები</h4>
                     <div class="post-list-footer">
-                        <% for(i = 0; i < x; i++) { %>
+                        <% appz.forEach(function (appData) { %>
                         <div class="spost clearfix">
                             <div class="entry-image">
-                                <a href="#">
-                                    <img src="../../client/images/1.jpg" alt="">
+                                <a href="/app/show/<%= appData._id %>">
+                                    <img src="<%= appData.icon %>" alt="">
                                 </a>
                             </div>
                             <div class="entry-c">
                                 <div class="entry-title">
-                                    <a href="#"><h4>Viber</h4></a>
-                                    <ul class="entry-meta"><li>10.03.2017</li></ul>
+                                    <a href="/app/show/<%= appData._id %>"><h4 id="app-h4-color"><%= appData.name %> (<%= appData.version %>)</h4></a>
+                                    <ul class="entry-meta"><li><%= appData.date.toDateString() %></li></ul>
                                 </div>
                             </div>
                         </div>
-                        <% } %>
+                        <% }) %>
                     </div>
+                        <div class="widget-footer">
+                            <a href="/all-apps">ყველა აპლიკაცია</a>
+                        </div>
                 </div>
 
-                <div class="widget clearfix">
-                    <h4>ახალი დამატებული</h4>
-                    <div class="post-list-footer">
-                        <% for(i = 0; i < x; i++) { %>
-                        <div class="spost clearfix">
-                            <div class="entry-image">
-                                <a href="#">
-                                    <img src="../../client/images/1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="entry-c">
-                                <div class="entry-title">
-                                    <a href="#"><h4>როგორ გადმოვწეროთ აპლიკაციები ანდროიდზე</h4></a>
-                                    <ul class="entry-meta"><li>10.03.2017</li></ul>
-                                </div>
-                            </div>
-                        </div>
-                        <% } %>
-                    </div>
-                </div>
+
             </div><!-- .sidebar end -->
 
         </div>
