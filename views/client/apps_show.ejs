@@ -1,0 +1,191 @@
+<% include ./partials/header_1 %>
+
+<!-- Primary Navigation
+============================================= -->
+<nav id="primary-menu">
+
+    <ul class="sf-js-enabled" style="touch-action: pan-y;">
+        <li><a href="/"><div class="hover-effect">სიახლეები</div></a>
+        </li>
+        <li><a href="/manuals/smartphone-manuals"><div class="hover-effect">სმარფონების ინსტრუქციები</div></a>
+        </li>
+        <li><a href="#"><div class="hover-effect">აპლიკაციები</div></a>
+        </li>
+    </ul>
+
+    <% include ./partials/header_2 %> <!-- TOP SEARCH BAR -->
+
+</nav><!-- #primary-menu end -->
+
+</div>
+
+</div>
+
+
+</header><!-- #header end -->
+
+
+    </header><!-- #header end -->
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '389823831395542',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1828802387394486";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Content
+============================================= -->
+    <div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-12" id="my-container">
+
+            <!-- Post Content
+            ============================================= -->
+                <div class="show-app-header">
+                    <div class="app-image-container">
+                        <img src="<%= app.icon %>" alt="<%= app.icon %>">
+                    </div>
+                    <div class="app-info">
+                          <h3><%= app.name %></h3>
+                        <table class="table table-condensed table-blockView">
+                            <tbody>
+                            <tr>
+                                <th>ვერსია</th>
+                                <td><%= app.version %></td>
+                            </tr>
+                            <tr>
+                                <th>ათვირთვის თარიღი</th>
+                                <td><%= app.date.toDateString() %></td>
+                            </tr>
+                            <tr>
+                                <th>გადმოწერა</th>
+                                <td><a href="<%= app.downloadLinks.local %>" download><span class="first-letter fl-hov">ლოკალური  ლინკი</span></a></td>
+                            </tr>
+                            <tr>
+                                <th>ოფიციალური</th>
+                                <td><a class="market-icons" href="<%= app.downloadLinks.playMarket %>" target="_blank"><img src="/uploads/staticResources/playstore-icon.png"></a><a
+                                                href="<%= app.downloadLinks.appStore %>" class="market-icons" target="_blank">
+                                        <img src="/uploads/staticResources/appstore-icon.png"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                        <!--<div class="blog-share clearfix">-->
+                                <!--<a href="#" class="social-icon si-borderless si-text-color si-facebook" id="shareBtn" title="Facebook">-->
+                                    <!--<i class="icon-facebook"></i>-->
+                                    <!--<i class="icon-facebook"></i>-->
+                                <!--</a>-->
+                                <!--<a href="#" class="social-icon si-borderless si-text-color si-twitter" title="Twitter">-->
+                                    <!--<i class="icon-twitter"></i>-->
+                                    <!--<i class="icon-twitter"></i>-->
+                                <!--</a>-->
+                                <!--<a href="#" class="social-icon si-borderless si-text-color si-youtube" title="Youtube">-->
+                                    <!--<i class="icon-youtube"></i>-->
+                                    <!--<i class="icon-youtube"></i>-->
+                                <!--</a>-->
+                        <!--</div>-->
+                    <div class="line"><h4><%= app.title %></h4></div>
+                </div>
+
+            <%- app.content %>
+             <!-- Comments
+			============================================= -->
+            <div id="comments" class="clearfix">
+
+                <!-- Facebook Comments
+                ============================================= -->
+                <div class="fb-comments" data-width="100%" data-href="https://guru-muru-sandrinio.c9users.io/client/app/show/<%= app._id %>" data-numposts="5" data-colorscheme="light"></div>
+                <!-- Facebook Comments end -->
+            </div><!-- #comments end -->
+
+        </div>
+
+        <!-- Sidebar
+        ============================================= -->
+        <% var x = 5 %>
+        <div class="sidebar-margins">
+            <div class="col-md-3 col-sm-12">
+
+                <div class="widget clearfix">
+                    <h4>აპები</h4>
+                    <div class="post-list-footer">
+                        <% for(i = 0; i < x; i++) { %>
+                        <div class="spost clearfix">
+                            <div class="entry-image">
+                                <a href="#">
+                                    <img src="../../client/images/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <a href="#"><h4>Viber</h4></a>
+                                    <ul class="entry-meta"><li>10.03.2017</li></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="widget clearfix">
+                    <h4>ახალი დამატებული</h4>
+                    <div class="post-list-footer">
+                        <% for(i = 0; i < x; i++) { %>
+                        <div class="spost clearfix">
+                            <div class="entry-image">
+                                <a href="#">
+                                    <img src="../../client/images/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <a href="#"><h4>როგორ გადმოვწეროთ აპლიკაციები ანდროიდზე</h4></a>
+                                    <ul class="entry-meta"><li>10.03.2017</li></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div><!-- .sidebar end -->
+            
+        </div>
+    </div>
+</div>
+</section><!-- #content end -->
+
+    <script>
+      document.getElementById('shareBtn').onclick = function() {
+        FB.ui({
+          method: 'share',
+          display: 'popup',
+          href: 'http://localhost:3000/client/app/show/<%= app._id %>'
+        }, function(response){});
+      }
+    </script>
+
+
+<% include ./partials/footer_1 %>

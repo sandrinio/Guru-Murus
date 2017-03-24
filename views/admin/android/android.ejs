@@ -1,0 +1,221 @@
+<% include ../partials/header %>
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <li class="header">Navigation Bar</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li><a href="/"><i class="fa fa-home" id="sidebar-icon" aria-hidden="true"></i> <span>საწყისი გვერდი</span></a></li>
+                <li><a href="#"><i class="fa fa-newspaper-o" id="sidebar-icon-news" aria-hidden="true"></i><span>სიახლეები</span></a></li>
+                <li class="treeview active">
+                    <a href="/smartphones/android"><i class="fa fa-android" id="sidebar-icon" aria-hidden="true"></i> <span>Android</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">ინსტრუქციები</a></li>
+                        <li><a href="#">აპლიკაციები</a></li>
+                        <li><a href="#">სიახლე სისტემაზე</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-apple" id="sidebar-icon" aria-hidden="true"></i> <span>iPhone</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="#">ინსტრუქციები</a></li>
+                        <li><a href="#">აპლიკაციები</a></li>
+                        <li><a href="#">სიახლე სისტემაზე</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- =============================================  Your Page Content Here  ============================================== -->
+            <!--filter of content-->
+            <div class="row">
+
+                <h3 class="text-center main-info-header">ისწავლე სმარტფონი ჩვენთან ერთად <br>
+                    <span id="loadLater" >ვიდეო </span><span id="showLater2">ინსტრუქციებით</span> </h3>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="my-info-box">
+                        <span class="my-info-box-icon bg-red-gradient"><i class="fa fa-exclamation"></i></span>
+                        <div class="info-box-content">
+                            <span class="my-info-box-text">საჭირო ინფო</span>
+                            <span class="my-info-box-number">ზოგადი ინფო ორივე სისტემაზე</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="my-info-box active-filter">
+                        <span class="my-info-box-icon bg-green-gradient"><i class="fa fa-android"></i></span>
+                        <div class="info-box-content">
+                            <span class="my-info-box-text">ანდროიდი</span>
+                            <span class="my-info-box-number">ვიდეოები ბრენდების მიხედვით</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="my-info-box">
+                        <span class="my-info-box-icon bg-black-gradient"><i class="fa fa-apple"></i></span>
+                        <div class="info-box-content">
+                            <span class="my-info-box-text">აიფონი</span>
+                            <span class="my-info-box-number">ვიდეოები iOS-ის შესწავლაზე</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="my-info-box">
+                        <span class="my-info-box-icon bg-yellow-gradient"><i class="fa fa-gamepad"></i></span>
+                        <div class="info-box-content">
+                            <span class="my-info-box-text">აპების მიმოხილვა</span>
+                            <span class="my-info-box-number">საინტერესო აპების გაცნობა და გამოყენება</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--filter of content END-->
+
+
+
+            <!--All Feeds row-->
+            <div class="row">
+                <!--Blog feed-->
+                <div class="col-md-9">
+                    <div class="box box-green">
+                        <div class="box-header with-border">
+                            <h3 class="box-title text-center">ანდროიდის სახელმძღვანელოები</h3>
+                        </div>
+                        <div class="box-body">
+
+                            <% x = 10 %>
+                            <% for(i = 0; i < x; i++){ %>
+                            <div class="col-md-4 col-sm-5">
+                                <div class="video-box">
+                                    <div class="video-box-image">
+                                        <a><img src="http://media.tvmovieshow.com/images/196x110/2000-hera-pheri-akshay-kumar.jpg" alt="title of post"></a>
+                                    </div>
+                                    <div class="video-box-title">
+                                        <a>ბლაბალბა ბლაბა ბლბალბალბალბაc,zmc.,zmc,.xzmc,.zmc,.mxz,cm.xzcz</a>
+                                    </div>
+                                    <div class="video-box-desc">
+                                        <em class="pull-right">date: 14.03.2017</em>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                            </div>
+                        <div class=" box-footer text-center">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav><!--PAGINATION END-->
+                        </div>
+                    </div>
+                </div>
+                <!--END Blog Feed-->
+
+                <!--Sidebar-->
+                <div class="col-md-3">
+                    <div class="box box-green">
+                        <div class="box-header with-border">
+                            <p class="box-title">ახალი ინსტრუქციები<p>
+                        </div>
+                        <div class="box-body">
+                            <ul class="products-list product-list-in-box">
+                                <% var x = 5 %>
+                                <% for(i = 0; i < x; i++){ %>
+                                <li class="item">
+                                    <div class="product-img">
+                                        <img src="/dist/static_images/default-50x50.gif">
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="newb-title">დავრეგისტრირდეთ Play Market-ზე</a>
+                                        <span class="newb-desc">
+                                            თავად ტკივილი არავის უყვარს, არავინ ეძებს მას და არავის სურს იგი, უბრალოდ იმიტომ, რომ ის ტკივილია...
+                                        </span>
+                                    </div>
+                                </li>
+                                <% } %>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="box box-green">
+                        <div class="box-header with-border">
+                            <p class="box-title">TOP 5 Apps</p>
+                        </div>
+                        <div class="box-body">
+                            <ul class="products-list product-list-in-box">
+                                <% var x = 5 %>
+                                <% for(i = 0; i < x; i++){ %>
+                                <li class="item">
+                                    <div class="app-img">
+                                        <img src="/dist/static_images/default-50x50.gif">
+                                    </div>
+                                    <div class="app-title">
+                                        <a href="#">Viber 6.6.0.888 (120251)</a>
+                                        <small class="app-date">Date: <em>01.03.2017</em></small>
+                                    </div>
+                                </li>
+                                <% } %>
+                            </ul>
+                        </div>
+                        <div class="box-footer text-center">
+                            <a href="#">ყველა</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Sidebar-->
+            </div>
+            <!--END All Feeds row-->
+
+        </section>
+
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+
+<% include ../partials/footer %>
