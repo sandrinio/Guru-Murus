@@ -5468,7 +5468,7 @@ body:not(.device-touch) .entry-link {
 .spost .entry-image,
 .mpost .entry-image {
 	float: left;
-	margin: 0 15px 0 0;
+	margin: 0 7px 0 0;
 	text-align: center;
 }
 
