@@ -94,7 +94,7 @@
 
                 <!-- Facebook Comments
                 ============================================= -->
-                <div class="fb-comments" data-width="100%" data-href="https://guru-muru-sandrinio.c9users.io/client/Hot-News/<%= blogPost._id %>" data-numposts="5" data-colorscheme="light"></div>
+                <div class="fb-comments" data-width="100%" data-href="https://gsmguru.ge/client/Hot-News/<%= blogPost._id %>" data-numposts="5" data-colorscheme="light"></div>
                 <!-- Facebook Comments end -->
             </div><!-- #comments end -->
 
@@ -113,7 +113,7 @@
                         <div class="spost clearfix">
                             <div class="entry-image">
                                 <a href="/app/show/<%= appData._id %>">
-                                    <img src="<%= appData.icon %>" alt="">
+                                    <img src="<%= appData.icon %>" >
                                 </a>
                             </div>
                             <div class="entry-c">
@@ -162,7 +162,7 @@
         FB.ui({
           method: 'share',
           display: 'popup',
-          href: 'http://localhost:3000/client/Hot-News/<%= blogPost._id %>'
+          href: 'http://gsmguru.ge/client/Hot-News/<%= blogPost._id %>'
         }, function(response){});
       }
     </script>

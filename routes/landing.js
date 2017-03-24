@@ -19,7 +19,6 @@ router.get('/', function (req, res) {
       appObject.appz = apps;
     }
   });
-
   News.find({}).sort('-date').exec(function (err, newsPosts){
     if(err){
       console.log(err)
@@ -41,11 +40,11 @@ router.get('/', function (req, res) {
       blogPostsList.hot = blogPostsArray[ + currentPage - 1];
       res.render('client/clientLanding', {
                               data: blogPostsList,
+                              apps: appObject,
                               pageSize: pageSize,
                               totalBlogPostsCount: totalBlogPostsCount,
                               pageCount: pageCount,
-                              currentPage: currentPage,
-                              apps: appObject
+                              currentPage: currentPage
                              });
         }
     });
