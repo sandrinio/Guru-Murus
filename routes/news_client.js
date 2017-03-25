@@ -3,8 +3,10 @@ var router = express.Router();
 var News = require('../models/news');
 var Apps = require('../models/applications');
 
+
+var appObject = {};
+
 router.get('/client/Hot-News/:id', function (req, res) {
-  var appObject = {};
   Apps.find({})
     .sort('-date')
     .limit(5)
