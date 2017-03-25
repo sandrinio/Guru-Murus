@@ -66,7 +66,7 @@
                                         <span><i class="fa fa-calendar" aria-hidden="true"> <%= hotNews.date.toDateString() %></i></span>
                                         <form action="/news/<%= hotNews._id %>?_method=DELETE" method="POST" id="edit-form">
                                             <button type="submit" class="label label-danger">Delete</button>
-                                            <a href="/news/edit" class="label label-warning">edit</a>
+                                            <a href="/admin/news/<%= hotNews._id %>/edit" class="label label-warning">edit</a>
                                         </form>
                                     </div>
                                 </div>

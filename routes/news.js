@@ -42,7 +42,14 @@ router.get('/admin/hotNews/:id', function (req, res) {
 });
 
 router.get('/admin/news/:id/edit', function (req, res) {
-  res.render('admin/news/edit')
+  News.findById(req.params.id, function (err, blogPost) {
+    if(err){
+      console.log(err)
+    }else{
+      res.render('admin/news/edit', { blogPost: blogPost })
+    }
+  })
+
 });
 
 router.post('/upload_photos', function (req, res){

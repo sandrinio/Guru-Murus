@@ -7,23 +7,23 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="../../admin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../admin/bootstrap/css/bootstrap.min.css">
     <!--Georgian font dejavu web-fonts.ge-->
-    <link rel="stylesheet" href="../../admin/dist/georgian_fonts/css/dejavu-sans.min.css">
+    <link rel="stylesheet" href="../../../admin/dist/georgian_fonts/css/dejavu-sans.min.css">
     <!--My own css-->
-    <link rel="stylesheet" href="../../admin/stylesheets/main.css">
+    <link rel="stylesheet" href="../../../admin/stylesheets/main.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="../../admin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../../admin/dist/css/AdminLTE.min.css">
     <!--w3schools css effects-->
-    <link rel="stylesheet" href="../../admin/dist/css/w3.css">
+    <link rel="stylesheet" href="../../../admin/dist/css/w3.css">
     <!--Skin-->
-    <link rel="stylesheet" href="../../admin/dist/css/skins/skin-purple.css">
+    <link rel="stylesheet" href="../../../admin/dist/css/skins/skin-purple.css">
     <!--CKeditor-->
-    <script src="../../admin/plugins/ckeditor/ckeditor.js"></script>
+    <script src="../../../admin/plugins/ckeditor/ckeditor.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -204,7 +204,7 @@ desired effect
                 <div class="col-md-9">
                     <div class="box box-purple">
                         <div class="box-header with-border">
-                            <h3 class="box-title text-center">ახალი ნიუსის დამატება</h3>
+                            <h3 class="box-title text-center">ნიუსის შეცვლა</h3>
                             <div class="box-tools pull-right">
                                 <button class="btn btn-box-tool" id="collapse-upload-container"><i class="fa fa-minus"></i></button>
                             </div>
@@ -244,18 +244,11 @@ desired effect
                                     <label for="inputTitle" class="col-sm-2 control-label">სათაური</label>
                                     <div class="col-sm-10">
                                         <input type="text" name="blogPost[title]"
-                                               class="form-control" id="inputTitle" placeholder="Title">
+                                               class="form-control" id="inputTitle" placeholder="Title" value="<%= blogPost.title %>">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <select id="inputTag" name="blogPost[inputTag]">
-                                        <option>Android</option>
-                                        <option>iOS</option>
-                                        <option>Smartphone</option>
-                                        <option>Brand</option>
-                                        <option>Innovation</option>
-                                        <option>Other</option>
-                                    </select>
+
                                 </div>
                                 <div>
                                     <textarea class="form-control" name="blogPost[content]" rows="10"></textarea>
@@ -315,13 +308,13 @@ desired effect
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 2.2.3 -->
-<script src="../../admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../../admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="../../admin/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../../admin/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../admin/dist/js/app.min.js"></script>
+<script src="../../../admin/dist/js/app.min.js"></script>
 <!--My Javascript-->
-<script src="../../admin/js/main.js"></script>
+<script src="../../../admin/js/main.js"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

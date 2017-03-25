@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="349fe97b-c4d2-4511-ba26-c487a6d252ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codekeeper.ejs" afterPath="$PROJECT_DIR$/codekeeper.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/applications_client.js" afterPath="$PROJECT_DIR$/routes/applications_client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/landing.js" afterPath="$PROJECT_DIR$/routes/landing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/news_client.js" afterPath="$PROJECT_DIR$/routes/news_client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/client/apps_show.ejs" afterPath="$PROJECT_DIR$/views/client/apps_show.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/client/clientLanding.ejs" afterPath="$PROJECT_DIR$/views/client/clientLanding.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/news.js" afterPath="$PROJECT_DIR$/routes/news.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/adminLanding.ejs" afterPath="$PROJECT_DIR$/views/admin/adminLanding.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/news/edit.ejs" afterPath="$PROJECT_DIR$/views/admin/news/edit.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,72 +22,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="clientLanding.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/client/clientLanding.ejs">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="new.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/news/new.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2910">
-              <caret line="194" column="54" lean-forward="true" selection-start-line="194" selection-start-column="54" selection-end-line="194" selection-end-column="54" />
+            <state relative-caret-position="-105">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applications_client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/applications_client.js">
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/news.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sm_manuals.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/sm_manuals.js">
+      <file leaf-file-name="edit.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/admin/news/edit.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="126">
+              <caret line="238" column="85" lean-forward="true" selection-start-line="238" selection-start-column="85" selection-end-line="238" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_client.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/news_client.js">
+      <file leaf-file-name="adminLanding.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/adminLanding.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landing.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/landing.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applications.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/applications.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codekeeper.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codekeeper.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="1020">
+              <caret line="68" column="84" lean-forward="false" selection-start-line="68" selection-start-column="84" selection-end-line="68" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -117,10 +84,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/views/client/apps_show.ejs" />
         <option value="$PROJECT_DIR$/codekeeper.ejs" />
-        <option value="$PROJECT_DIR$/views/client/clientLanding.ejs" />
         <option value="$PROJECT_DIR$/routes/landing.js" />
         <option value="$PROJECT_DIR$/routes/applications_client.js" />
         <option value="$PROJECT_DIR$/routes/news_client.js" />
+        <option value="$PROJECT_DIR$/views/client/clientLanding.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/adminLanding.ejs" />
+        <option value="$PROJECT_DIR$/routes/news.js" />
+        <option value="$PROJECT_DIR$/views/admin/news/edit.ejs" />
       </list>
     </option>
   </component>
@@ -192,7 +162,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -206,7 +180,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Guru-Murus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Guru-Murus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -282,6 +278,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -346,15 +348,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490347532164</updated>
-      <workItem from="1490347534565" duration="20175000" />
+      <workItem from="1490347534565" duration="20870000" />
+      <workItem from="1490445359543" duration="1070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20175000" />
+    <option name="totallyTimeSpent" value="21940000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18268467" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -368,11 +371,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39060205" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -389,6 +392,62 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/client/clientLanding.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2910">
+          <caret line="194" column="54" lean-forward="true" selection-start-line="194" selection-start-column="54" selection-end-line="194" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/applications_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/sm_manuals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/news_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/applications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codekeeper.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/admin/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -401,7 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5463" column="19" lean-forward="true" selection-start-line="5463" selection-start-column="19" selection-end-line="5463" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -417,7 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3975">
           <caret line="265" column="20" lean-forward="true" selection-start-line="265" selection-start-column="20" selection-end-line="265" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -425,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="689">
           <caret line="115" column="67" lean-forward="false" selection-start-line="115" selection-start-column="67" selection-end-line="115" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -433,7 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="135" column="44" lean-forward="false" selection-start-line="135" selection-start-column="44" selection-end-line="135" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -441,7 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -449,7 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="217" column="11" lean-forward="false" selection-start-line="217" selection-start-column="11" selection-end-line="217" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -477,10 +530,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/applications.js">
+    <entry file="file://$PROJECT_DIR$/routes/news_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -493,10 +546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/clientLanding.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/sm_manuals.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="194" column="54" lean-forward="true" selection-start-line="194" selection-start-column="54" selection-end-line="194" selection-end-column="54" />
+        <state relative-caret-position="135">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -509,18 +562,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/sm_manuals.js">
+    <entry file="file://$PROJECT_DIR$/views/client/clientLanding.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="171">
+          <caret line="194" column="54" lean-forward="false" selection-start-line="194" selection-start-column="54" selection-end-line="194" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/news_client.js">
+    <entry file="file://$PROJECT_DIR$/routes/applications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/adminLanding.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="84" lean-forward="false" selection-start-line="68" selection-start-column="84" selection-end-line="68" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/news/new.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="48" column="56" lean-forward="false" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/news/edit.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="238" column="85" lean-forward="true" selection-start-line="238" selection-start-column="85" selection-end-line="238" selection-end-column="85" />
           <folding />
         </state>
       </provider>
