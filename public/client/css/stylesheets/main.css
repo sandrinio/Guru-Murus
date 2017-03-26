@@ -148,3 +148,7 @@
     font-size: 18px;
     padding-right: 5px;
 }
+
+#apps-tab-nav li{
+    margin-left: 5px
+}

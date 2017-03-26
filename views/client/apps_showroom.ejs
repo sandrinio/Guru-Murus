@@ -1,0 +1,121 @@
+<% include ./partials/header_1 %>
+
+<!-- Primary Navigation
+============================================= -->
+<nav id="primary-menu">
+
+    <ul class="sf-js-enabled" style="touch-action: pan-y;">
+        <li><a href="/"><div class="hover-effect">სიახლეები</div></a>
+        </li>
+        <li><a href="/manuals/smartphone-manuals"><div class="hover-effect">სმარფონების ინსტრუქცია</div></a>
+        </li>
+        <li><a href="/apps/apps-list"><div class="hover-effect">აპლიკაციები</div></a>
+        </li>
+    </ul>
+
+    <% include ./partials/header_2 %> <!-- TOP SEARCH BAR -->
+
+</nav><!-- #primary-menu end -->
+
+</div>
+
+</div>
+
+
+</header><!-- #header end -->
+
+
+</header><!-- #header end -->
+
+
+<!-- Content
+============================================= -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-12" id="my-container">
+
+            <!-- Post Content
+            ============================================= -->
+
+
+            <div class="tabs tabs-alt tabs-tb clearfix" id="tab-8">
+                <ul class="tab-nav clearfix" id="apps-tab-nav">
+                    <li><a href="#tabs-1">ტოპ 10</a></li>
+                    <li><a href="#tabs-2">თამაშები</a></li>
+                    <li><a href="#tabs-3">სოციალური ქსელი</a></li>
+                    <li><a href="#tabs-4">პრაქტიკული</a></li>
+                    <li><a href="#tabs-5">რაღაც</a></li>
+                    <li><a href="#tabs-6">რუღაც</a></li>
+                </ul>
+
+                <div class="tab-container">
+
+                    <div class="tab-content clearfix" id="tabs-1">
+
+                    </div>
+                    <div class="tab-content clearfix" id="tabs-2">
+
+                    </div>
+                    <div class="tab-content clearfix" id="tabs-3">
+
+                    </div>
+                    <div class="tab-content clearfix" id="tabs-4">
+
+                    </div>
+                    <div class="tab-content clearfix" id="tabs-5">
+
+                    </div>
+                    <div class="tab-content clearfix" id="tabs-6">
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+
+
+        <!-- Sidebar
+        ============================================= -->
+        <% var x = 5 %>
+        <div class="sidebar-margins">
+            <div class="col-md-3 col-sm-12">
+
+                <div class="widget clearfix">
+                    <h4>ინსტრუქციები</h4>
+
+                    <div class="widget-footer">
+                        <a href="/all-apps">ყველა ვიდეო</a>
+                    </div>
+                </div>
+
+                <div class="widget clearfix">
+                    <h4>ახალი დამატებული</h4>
+                    <div class="post-list-footer">
+                        <% for(i = 0; i < x; i++) { %>
+                        <div class="spost clearfix">
+                            <div class="entry-image">
+                                <a href="#">
+                                    <img src="../../client/images/1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="entry-c">
+                                <div class="entry-title">
+                                    <a href="#"><h4>როგორ გადმოვწეროთ აპლიკაციები ანდროიდზე</h4></a>
+                                    <ul class="entry-meta"><li>10.03.2017</li></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div><!-- .sidebar end -->
+
+        </div>
+    </div>
+</div>
+</section><!-- #content end -->
+
+
+
+<% include ./partials/footer_1 %>

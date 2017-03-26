@@ -1,0 +1,165 @@
+<% include ../partials/header %>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu">
+            <li class="header">Navigation Bar</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="/admin/admin-panel"><i class="fa fa-home" id="sidebar-icon" aria-hidden="true"></i> <span>საწყისი გვერდი</span></a></li>
+            <li class="treeview">
+                <a href="/admin/news/new"><i class="fa fa-newspaper-o" id="sidebar-icon-news" aria-hidden="true"></i><span>სიახლეები</span></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/news/new">Add News</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="/admin/news/new"><i class="fa fa-gamepad"></i><span>აპლიკაციები</span></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/app-list">All Apps</a></li>
+                    <li><a href="/admin/app/new">Add new App</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- =============================================  Your Page Content Here  ============================================== -->
+        <div class="row">
+            <div class="col-md-1"></div>
+            <!--new blog-->
+            <div class="col-md-9">
+                <div class="box box-purple">
+                    <div class="box-header with-border">
+                        <h3 class="box-title text-center">ახალი აპლიკაციის დამატება</h3>
+                        <div class="box-tools pull-right">
+                            <button class="btn btn-box-tool" id="collapse-upload-container"><i class="fa fa-minus"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div id="collapsable">
+                            <!-- Photos upload Form -->
+                            <form id="upload-app" method="post" action="/app/upload" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="photos-input">File input</label>
+                                    <input id="photos-input" type="file" name="photos[]" multiple="multiple" >
+                                </div>
+                                <input type="hidden" name="csrf_token" value="just_a_text_field" />
+                                <input class="btn btn-warning" type="submit" name="Photo Uploads" value="Upload File" />
+                            </form>
+                            <!-- Progress Bar -->
+                            <div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active"
+                                         role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                        <span class="sr-only"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Photos Album Container -->
+                            <div id="album"></div>
+                        </div>
+                        <form action="/admin/app/<%= editApp._id %>/edit?_method=PUT" method="POST">
+                            <div class="form-group">
+                                <label for="billboard" class="col-sm-2 control-label">App Icon</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="app[icon]" value="<%= editApp.icon %>"
+                                           class="form-control" id="billboard" placeholder="Icon Link">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputTitle" class="col-sm-2 control-label">App Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="app[name]" value="<%= editApp.name %>"
+                                           class="form-control" id="inputTitle" placeholder="სახელი">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="versrion" class="col-sm-2 control-label">App Version</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="app[version]" value="<%= editApp.version %>"
+                                           class="form-control" id="version" placeholder="ვერსია">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDownload1" class="col-sm-2 control-label">local</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="downloadLinks[local]" value="<%= editApp.downloadLinks.local %>"
+                                           class="form-control" id="inputDownload1" placeholder="ლოკალური ლინკი">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDownload2" class="col-sm-2 control-label">App Store</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="downloadLinks[appStore]" value="<%= editApp.downloadLinks.appStore %>"
+                                           class="form-control" id="inputDownload21" placeholder="აითუნსის ლინკი">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDownload3" class="col-sm-2 control-label">Play Market</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="downloadLinks[playMarket]" value="<%= editApp.downloadLinks.playMarket %>"
+                                           class="form-control" id="inputDownload21" placeholder="პლეი მარკეტის ლინკი">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" name="app[tag]">
+                                    <option>თამაში</option>
+                                    <option>სოციალური ქსელი</option>
+                                    <option>ფოტო / კამერა</option>
+                                    <option>პრაქტიკული</option>
+                                </select>
+                            </div>
+                            <div class="ckeditor-textarea">
+                                <textarea class="form-control" name="app[content]"><%- editApp.content %></textarea>
+
+                                <script>
+                                  CKEDITOR.replace('app[content]');
+                                </script>
+
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary pull-right">დაპოსტვა</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+</div>
+<!--Sidebar-->
+</div>
+<!--END All Feeds row-->
+
+</section>
+
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+<% include ../partials/appsFooter %>

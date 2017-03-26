@@ -29,7 +29,13 @@ router.get('/admin/app/:id', function(req, res){
 
 // EDIT
 router.get('/admin/app/:id/edit', function (req, res) {
-
+  Apps.findById(req.params.id, function (err, editApp) {
+    if(err){
+      res.send(err)
+    }else{
+      res.render('admin/applications/edit', { editApp: editApp })
+    }
+  });
 });
 
 
@@ -44,10 +50,8 @@ router.post('/admin/app/new', function (req, res) {
                                };
       Apps.create(applicationData, function (err, newApp) {
         if(err){
-          console.log(err);
-          req.flash('error', err)
+          res.send(err);
         }else{
-
           req.flash('success', 'New Application Posted')
           res.redirect('back');
         }
@@ -118,6 +122,29 @@ router.post('/app/upload', function(req, res){
   form.parse(req, function (err, fields, files) {
     res.status(200).json(photos);
   });
+});
+
+
+router.put('/admin/app/:id/edit', function (req, res) {
+  var applicationData = req.body.app;
+  applicationData.downloadLinks = req.body.downloadLinks;
+  Apps.findByIdAndUpdate(req.params.id, applicationData, function (err, editedApp) {
+    if( err ){
+      res.send(err)
+    }else{
+      res.redirect('back')
+    }
+  })
+});
+
+router.delete('/admin/app/:id/delete', function (req, res) {
+  Apps.findByIdAndRemove(req.params.id, function (err, delPost) {
+    if( err ){
+      res.send(error)
+    }else{
+      res.redirect('back');
+    }
+  })
 });
 
 

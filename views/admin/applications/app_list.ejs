@@ -43,15 +43,30 @@
             <div class="col-md-12">
             <!--all apps-->
             <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>აპპ სახელი</th>
+                    <th>აპპ ვერსია</th>
+                    <th>ავტორი</th>
+                    <th>ატვირთვის თარიღი</th>
+                    <th>წაშლა-წამოშლა</th>
+                </tr>
+                </thead>
                 <tbody>
                 <% app.forEach(function (thisApp) { %>
                     <tr class="admin-apps-img">
                         <th><img src="<%=thisApp.icon%>"></th>
-                        <td><a <%= thisApp._id %>><%= thisApp.name %></a></td>
+                        <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
                         <td><%= thisApp.version %></td>
                         <td><%= thisApp.author.fullname %></td>
                         <td><%= thisApp.date.toDateString() %></td>
-                        <td></td>
+                        <td>
+                            <form action="/admin/app/<%= thisApp._id %>/delete?_method=DELETE" method="POST">
+                                <button type="submit" class="label label-danger">Delete</button>
+                                <a href="/admin/app/<%= thisApp._id %>/edit" class="label label-warning">Edit</a>
+                            </form>
+                        </td>
                     </tr>
                  <% }) %>
                 </tbody>

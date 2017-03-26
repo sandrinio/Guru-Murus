@@ -3,6 +3,17 @@ var router = express.Router();
 var Apps = require('../models/applications');
 
 
+
+router.get('/apps/apps-list', function (req, res) {
+  Apps.find({}, function (err, appsList) {
+    if(err){
+      res.send(err)
+    }else{
+      res.render('client/apps_showroom', { appsList: appsList })
+    }
+  });
+});
+
 var appObject = {};
 router.get('/app/show/:id', function (req, res) {
   Apps.find({})
