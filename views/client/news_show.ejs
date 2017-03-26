@@ -11,6 +11,8 @@
         </li>
         <li><a href="/apps/apps-list"><div class="hover-effect">აპლიკაციები</div></a>
         </li>
+        <li><a href="#"><div class="hover-effect">ბლოგი</div></a>
+        </li>
     </ul>
 
     <% include ./partials/header_2 %> <!-- TOP SEARCH BAR -->
@@ -66,7 +68,7 @@
                     <ul class="entry-meta clearfix">
                         <li><i class="icon-calendar3"></i><%= blogPost.date.toDateString() %></li>
                         <li><a href="#"><i class="icon-user"></i><%= blogPost.author.fullname %></a></li>
-                        <li><i class="icon-folder-open"></i> <a href="#">General</a>, <a href="#">Media</a></li>
+                        <li><i class="icon-folder-open"></i> <a href="#"><%=blogPost.tag%></a></li>
                     </ul>
                         <div class="blog-share clearfix">
                                 <a href="#" class="social-icon si-borderless si-text-color si-facebook" id="shareBtn" title="Facebook">

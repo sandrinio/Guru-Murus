@@ -1,0 +1,94 @@
+<% include ../partials/header %>
+
+
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu">
+            <li class="header">Navigation Bar</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="/admin/admin-panel"><i class="fa fa-home" id="sidebar-icon" aria-hidden="true"></i> <span>საწყისი გვერდი</span></a></li>
+            <li class="treeview">
+                <a href="/admin/news/new"><i class="fa fa-newspaper-o" id="sidebar-icon-news" aria-hidden="true"></i><span>სიახლეები</span></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/news/new">Add News</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="/admin/news/new"><i class="fa fa-gamepad"></i><span>აპლიკაციები</span></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/app-list">All Apps</a></li>
+                    <li><a href="/admin/app/new">Add new App</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="/admin/instructions"><i class="fa fa-cogs" aria-hidden="true"></i><span>ინსტრუქციები</span></a>
+                <ul class="treeview-menu">
+                    <li><a href="/admin/instructions">Manuals</a></li>
+                    <li><a href="/admin/instructions/new">Add a new Manual</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- =============================================  Your Page Content Here  ============================================== -->
+        <!--filter of videos-->
+
+
+        <!--All Feeds row-->
+        <div class="row">
+            <!--Blog feed-->
+            <div class="col-md-12">
+                <div class="box box-purple">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">ინსტრუქციები</h3>
+                    </div>
+                    <div class="box-body">
+                        <% manuals.forEach(function( manual ) { %>
+                        <div class="news-item">
+                            <div class="news-image-container pull-left">
+                                <img src="<%= manual.billboard %>">
+                            </div>
+                            <div class="news-title">
+                                <a href="/admin/instructions/"><h4><%= manual.title %></h4></a>
+                            </div>
+                            <div class="meta-line">
+                                <span><i class="fa fa-calendar" aria-hidden="true"> <%= manual.date.toDateString() %></i></span>
+                                <form action="/admin/instructions/?_method=DELETE" method="POST" id="edit-form">
+                                    <button type="submit" class="label label-danger">Delete</button>
+                                    <a href="/admin/instructions/edit" class="label label-warning">edit</a>
+                                </form>
+                            </div>
+                        </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+            <!--END Blog Feed-->
+        </div>
+        <!--END All Feeds row-->
+
+    </section>
+
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+<% include ../partials/footer %>

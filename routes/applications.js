@@ -53,7 +53,7 @@ router.post('/admin/app/new', function (req, res) {
           res.send(err);
         }else{
           req.flash('success', 'New Application Posted')
-          res.redirect('back');
+          res.redirect('admin/app-list');
         }
       });
 });

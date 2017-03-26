@@ -4,8 +4,9 @@ var manualsSchema = new mongoose.Schema({
 
   billboard: {type: String, required: true},
   title: {type: String, required: true},
-  tag: {type: String, required: true},
+  tag: {},
   video: {type: String, required: true},
+  os: String,
   content: {type: String, required: true},
 
   author: {

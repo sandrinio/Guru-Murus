@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GSM Gurus</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../admin/bootstrap/css/bootstrap.min.css">
+    <!--Georgian font dejavu web-fonts.ge-->
+    <link rel="stylesheet" href="../../admin/dist/georgian_fonts/css/dejavu-sans.min.css">
+    <!--My own css-->
+    <link rel="stylesheet" href="../../admin/stylesheets/main.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../admin/dist/css/AdminLTE.min.css">
+    <!--w3schools css effects-->
+    <link rel="stylesheet" href="../../admin/dist/css/w3.css">
+    <!--Skin-->
+    <link rel="stylesheet" href="../../admin/dist/css/skins/skin-purple.css">
+    <!--CKeditor-->
+    <script src="../../admin/plugins/ckeditor/ckeditor.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-purple sidebar-collapse sidebar-mini">
+<div class="wrapper">
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a href="/admin/admin-panel" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>G</b>uru</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>GSM </b>Guru</span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <% if(currentUser){ %>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <img src="/uploads/userPics/<%= currentUser.pic %>" class="user-image">
+                            <span class="hidden-xs"><%= currentUser.fullname %></span>
+
+                            <ul class="dropdown-menu">
+                                <li class="user-header">
+                                    <img src="/uploads/userPics/<%= currentUser.pic %>" class="img-circle">
+                                    <p class="text-center"><%= currentUser.fullname %>
+
+                                    </p>
+                                </li>
+                                <li class="user-body">
+                                </li>
+                                <li class="user-footer">
+                                    <% if(currentUser.permission === 'admin') { %>
+                                    <div class="pull-left">
+                                        <a href="/admin/admin-panel" class="btn btn-default btn-flat">ადმინ პანელი</a>
+                                    </div>
+                                    <% } %>
+                                    <div class="pull-right">
+                                        <a href="/admin/logout" class="btn btn-default btn-flat">გამოსვლა</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navbar Right Menu -->
+            <% }else { %>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="hidden-xs">Login</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <form action="/admin/login" method="POST">
+                                <li class="inputs-container">
+                                    <input name="username" type="email" placeholder="მეილი">
+                                    <input name="password" type="Password" placeholder="პაროლი">
+                                </li>
+                                <li>
+                                    <button type="submit">შესვლა</button>
+                                </li>
+                            </form>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="/admin/register">
+                            <span class="hidden-xs">რეგისტრაცია</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <% } %>
+        </nav>
+    </header>
+
+
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu">
+                <li class="header">Navigation Bar</li>
+                <!-- Optionally, you can add icons to the links -->
+                <li class="active"><a href="/admin/admin-panel"><i class="fa fa-home" id="sidebar-icon" aria-hidden="true"></i> <span>საწყისი გვერდი</span></a></li>
+                <li class="treeview">
+                    <a href="/admin/news/new"><i class="fa fa-newspaper-o" id="sidebar-icon-news" aria-hidden="true"></i><span>სიახლეები</span></a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/news/new">Add News</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/admin/news/new"><i class="fa fa-gamepad"></i><span>აპლიკაციები</span></a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/app-list">All Apps</a></li>
+                        <li><a href="/admin/app/new">Add new App</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/admin/instructions"><i class="fa fa-cogs" aria-hidden="true"></i><span>ინსტრუქციები</span></a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/instructions">Manuals</a></li>
+                        <li><a href="/admin/instructions/new">Add a new Manual</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <!-- =============================================  Your Page Content Here  ============================================== -->
+            <div class="row">
+                <div class="col-md-1"></div>
+                <!--new blog-->
+                <div class="col-md-9">
+                    <div class="box box-purple">
+                        <div class="box-header with-border">
+                            <h3 class="box-title text-center">ახალი ინსტრუქცია დამატება</h3>
+                            <div class="box-tools pull-right">
+                                <button class="btn btn-box-tool" id="collapse-upload-container"><i class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div id="collapsable">
+                                <!-- Photos upload Form -->
+                                <form id="upload-photos" method="post" action="/manuals_uploads" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="photos-input">File input</label>
+                                        <input id="photos-input" type="file" name="photos[]" multiple="multiple" >
+                                    </div>
+                                    <input type="hidden" name="csrf_token" value="just_a_text_field" />
+                                    <input class="btn btn-warning" type="submit" name="Photo Uploads" value="Upload Photos" />
+                                </form>
+                                <!-- Progress Bar -->
+                                <div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped active"
+                                             role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Photos Album Container -->
+                                <div id="album"></div>
+                            </div>
+                            <form action="/admin/instructions" method="POST">
+                                <div class="form-group">
+                                    <label for="billboard" class="col-sm-2 control-label">Billboard</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="manual[billboard]"
+                                               class="form-control" id="billboard" placeholder="Image Link">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputTitle" class="col-sm-2 control-label">სათაური</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="manual[title]"
+                                               class="form-control" id="inputTitle" placeholder="Title">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputTitle" class="col-sm-2 control-label">ვიდეო</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="manual[video]"
+                                               class="form-control" id="inputTitle" placeholder="ვიდეოს ლინკი">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <label for="tag" class="col-sm-2 control-label">Tag</label>
+                                    <select multiple class="form-control" name="manual[tag]">
+                                        <option>მარკეტი</option>
+                                        <option>ქლაუდი</option>
+                                        <option>კონტაქტები</option>
+                                        <option>პარამეტრები</option>
+                                        <option>დარეკვა</option>
+                                        <option>სმს</option>
+                                        <option>სხვადასხვა</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                        <label for="OS" class="col-sm-2 control-label">OS</label>
+                                    <select class="form-control" name="manual[os]">
+                                        <option>other</option>
+                                        <option>Android</option>
+                                        <option>iOS</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="test-div">
+                                    <textarea class="form-control" name="manual[content]" rows="10"></textarea>
+
+                                    <script>
+                                      CKEDITOR.replace('manual[content]');
+                                    </script>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-primary pull-right">დაპოსტვა</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <!--Sidebar-->
+</div>
+<!--END All Feeds row-->
+
+</section>
+
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+<!-- Main Footer -->
+<footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2017 <a href="#">SG Group</a></strong> All rights reserved.
+</footer>
+
+
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+</div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../../admin/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../admin/bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../admin/dist/js/app.min.js"></script>
+<!--My Javascript-->
+<script src="../../admin/js/main.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>

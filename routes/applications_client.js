@@ -9,7 +9,9 @@ router.get('/apps/apps-list', function (req, res) {
     if(err){
       res.send(err)
     }else{
-      res.render('client/apps_showroom', { appsList: appsList })
+      res.render('client/apps_showroom', {
+           appsList: appsList
+      })
     }
   });
 });

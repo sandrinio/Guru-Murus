@@ -4,7 +4,7 @@ var postsSchema = new mongoose.Schema({
   
   billboard: String, 
   title:     String,
-  tag:       String, 
+  tag:       {},
   content:   String,
 
   author: {

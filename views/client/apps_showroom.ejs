@@ -11,6 +11,8 @@
         </li>
         <li><a href="/apps/apps-list"><div class="hover-effect">აპლიკაციები</div></a>
         </li>
+        <li><a href="#"><div class="hover-effect">ბლოგი</div></a>
+        </li>
     </ul>
 
     <% include ./partials/header_2 %> <!-- TOP SEARCH BAR -->
@@ -51,16 +53,100 @@
                 <div class="tab-container">
 
                     <div class="tab-content clearfix" id="tabs-1">
-
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>აპპ სახელი</th>
+                                <th>ვერსია</th>
+                                <th>განახლების თარიღი</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% appsList.forEach(function (thisApp) { %>
+                            <% if(thisApp.name === 'Viber' || thisApp.name === 'Clash Royale' || thisApp.name === 'Facebook' || thisApp.name === 'WhatsApp' || thisApp.name === 'Clash Of Clans') { %>
+                            <tr class="admin-apps-img">
+                                <th><img src="<%= thisApp.icon %>"></th>
+                                <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
+                                <td><%= thisApp.version %></td>
+                                <td><%= thisApp.date.toDateString() %></td>
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-content clearfix" id="tabs-2">
-
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>აპპ სახელი</th>
+                                <th>ვერსია</th>
+                                <th>განახლების თარიღი</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% appsList.forEach(function (thisApp) { %>
+                            <% if(thisApp.tag === 'თამაში') { %>
+                            <tr class="admin-apps-img">
+                                <th><img src="<%= thisApp.icon %>"></th>
+                                <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
+                                <td><%= thisApp.version %></td>
+                                <td><%= thisApp.date.toDateString() %></td>
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-content clearfix" id="tabs-3">
-
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>აპპ სახელი</th>
+                                <th>ვერსია</th>
+                                <th>განახლების თარიღი</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% appsList.forEach(function (thisApp) { %>
+                            <% if(thisApp.tag === 'სოციალური ქსელი') { %>
+                            <tr class="admin-apps-img">
+                                <th><img src="<%= thisApp.icon %>"></th>
+                                <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
+                                <td><%= thisApp.version %></td>
+                                <td><%= thisApp.date.toDateString() %></td>
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-content clearfix" id="tabs-4">
-
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>აპპ სახელი</th>
+                                <th>ვერსია</th>
+                                <th>განახლების თარიღი</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% appsList.forEach(function (thisApp) { %>
+                            <% if(thisApp.tag === 'პრაქტიკული') { %>
+                            <tr class="admin-apps-img">
+                                <th><img src="<%= thisApp.icon %>"></th>
+                                <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
+                                <td><%= thisApp.version %></td>
+                                <td><%= thisApp.date.toDateString() %></td>
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-content clearfix" id="tabs-5">
 
