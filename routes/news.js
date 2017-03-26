@@ -10,9 +10,6 @@ var News = require('../models/news'),
     fileType       = require('file-type');
 
 
-
-
-
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'public/uploads/blogUploads/');
@@ -49,8 +46,8 @@ router.get('/admin/news/:id/edit', function (req, res) {
       res.render('admin/news/edit', { blogPost: blogPost })
     }
   })
-
 });
+
 
 router.post('/upload_photos', function (req, res){
   var photos = [],
@@ -118,8 +115,6 @@ router.post('/upload_photos', function (req, res){
   });
 });
 
-
-
 router.post('/news/new/blogPost', middleware.isLoggedIn, function(req, res){
   var postContent = req.body.blogPost;
   postContent.author = {
@@ -136,9 +131,18 @@ router.post('/news/new/blogPost', middleware.isLoggedIn, function(req, res){
   });
 });
 
+router.put('/admin/news/:id', function(req, res){
+  var updatePostContent = req.body.blogPost;
+  News.findByIdAndUpdate(req.params.id, updatePostContent, function(err, updatedPost){
+    if(err){
+      console.log(err)
+    }else{
+      res.redirect('/admin/admin-panel')
+    }
+  });
+});
 
-
-router.delete('/news/:id', function (req, res) {
+router.delete('/admin/news/:id', function (req, res) {
   News.findByIdAndRemove(req.params.id, function (err, blogPost) {
     if(err){
       console.log(err)
@@ -148,7 +152,5 @@ router.delete('/news/:id', function (req, res) {
     }
   });
 });
-
-
 
 module.exports = router;

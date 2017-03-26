@@ -6,8 +6,8 @@ var appsSchema = new mongoose.Schema({
   name:     String,
   content:  String,
   version:  String,
+  tag:      String,
   downloadLinks: {
-
       local: String,
       appStore: String,
       playMarket: String
