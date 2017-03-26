@@ -116,8 +116,16 @@
                                                class="form-control" id="inputDownload21" placeholder="პლეი მარკეტის ლინკი">
                                     </div>
                                 </div>
-                                    <div>
-                                        <textarea class="form-control" name="app[content]" rows="10"></textarea>
+                                <div class="form-group">
+                                    <select class="form-control" name="app[tag]">
+                                        <option>თამაში</option>
+                                        <option>სოციალური ქსელი</option>
+                                        <option>ფოტო / კამერა</option>
+                                        <option>პრაქტიკული</option>
+                                    </select>
+                                </div>
+                                    <div class="ckeditor-textarea">
+                                        <textarea class="form-control" name="app[content]" rows="20"></textarea>
 
                                         <script>
                                           CKEDITOR.replace('app[content]');

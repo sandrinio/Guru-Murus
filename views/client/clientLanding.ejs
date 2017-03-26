@@ -113,11 +113,11 @@
                             <% data.hot.forEach(function( hotNews ) { %>
 							<div class="entry clearfix">
 								<div class="entry-image">
-									<a href="/client/Hot-News/<%= hotNews._id %>" data-lightbox="image"><img class="image_fade" src="<%= hotNews.billboard %>" alt="Standard Post with Image"></a>
+									<a href="/Hot-News/<%= hotNews._id %>" data-lightbox="image"><img class="image_fade" src="<%= hotNews.billboard %>" alt="Standard Post with Image"></a>
 								</div>
 								<div class="entry-c">
 									<div class="entry-title">
-										<h2><a href="/client/Hot-News/<%= hotNews._id %>"><%= hotNews.title %></a></h2>
+										<h2><a href="/Hot-News/<%= hotNews._id %>"><%= hotNews.title %></a></h2>
 									</div>
 									<ul class="entry-meta clearfix">
 										<li><i class="icon-calendar3"></i><%= hotNews.date.toDateString() %></li>
@@ -125,7 +125,7 @@
 									</ul>
 									<div class="entry-content">
 										<p><%- hotNews.content.slice(0, 200); %>...</p>
-										<a href="/client/Hot-News/<%= hotNews._id %>" class="more-link">მეტი</a>
+										<a href="/Hot-News/<%= hotNews._id %>" class="more-link">მეტი</a>
                                         <div class="social-share clearfix">
                                             <div>
                                                 <a href="#" class="social-icon si-borderless si-text-color si-facebook" title="Facebook">

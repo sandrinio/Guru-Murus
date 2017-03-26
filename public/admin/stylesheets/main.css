@@ -479,3 +479,7 @@ body {
 .admin-apps-img img {
     width: 25px;
 }
+
+.ckeditor-textarea textarea{
+    margin-top: 20px;
+}

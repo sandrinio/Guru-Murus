@@ -40,4 +40,5 @@ CKEDITOR.editorConfig = function( config ) {
 	config.extraPlugins = 'lineheight';
 	config.extraPlugins = 'youtube';
 	config.uploadUrl = '/news/uploads/blogUploads';
+  config.height = 500;
 };

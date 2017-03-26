@@ -150,7 +150,7 @@ desired effect
             <ul class="sidebar-menu">
                 <li class="header">Navigation Bar</li>
                 <!-- Optionally, you can add icons to the links -->
-                <li class="active"><a href="/"><i class="fa fa-home" id="sidebar-icon" aria-hidden="true"></i> <span>საწყისი გვერდი</span></a></li>
+                <li class="active"><a href="/admin/admin-panel"><i class="fa fa-home" id="sidebar-icon" aria-hidden="true"></i> <span>საწყისი გვერდი</span></a></li>
                 <li class="treeview">
                     <a href="/admin/news/new"><i class="fa fa-newspaper-o" id="sidebar-icon-news" aria-hidden="true"></i><span>სიახლეები</span></a>
                     <ul class="treeview-menu">
@@ -158,27 +158,10 @@ desired effect
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="/smartphone/android"><i class="fa fa-android" id="sidebar-icon" aria-hidden="true"></i> <span>Android</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
+                    <a href="/admin/news/new"><i class="fa fa-gamepad"></i><span>აპლიკაციები</span></a>
                     <ul class="treeview-menu">
-                        <li><a href="/smartphone/android">ინსტრუქციები</a></li>
-                        <li><a href="#">აპლიკაციები</a></li>
-                        <li><a href="#">სიახლე სისტემაზე</a></li>
-                    </ul>
-                </li>
-
-
-                <li class="treeview">
-                    <a href="#"><i class="fa fa-apple" id="sidebar-icon" aria-hidden="true"></i> <span>iPhone</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#">ინსტრუქციები</a></li>
-                        <li><a href="#">აპლიკაციები</a></li>
-                        <li><a href="#">სიახლე სისტემაზე</a></li>
+                        <li><a href="/admin/app-list">All Apps</a></li>
+                        <li><a href="/admin/app/new">Add new App</a></li>
                     </ul>
                 </li>
             </ul>
@@ -251,7 +234,7 @@ desired effect
 
                                 </div>
                                 <div>
-                                    <textarea class="form-control" name="blogPost[content]" rows="10" value"<%- blogPost.content %>"></textarea>
+                                    <textarea class="form-control" name="blogPost[content]" rows="10" value="<%- blogPost.content %>"></textarea>
 
                                     <script>
                                       CKEDITOR.replace('blogPost[content]');

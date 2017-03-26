@@ -6,7 +6,7 @@ var Apps = require('../models/applications');
 
 var appObject = {};
 
-router.get('/client/Hot-News/:id', function (req, res) {
+router.get('/Hot-News/:id', function (req, res) {
   Apps.find({})
     .sort('-date')
     .limit(5)
