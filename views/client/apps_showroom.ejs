@@ -46,8 +46,8 @@
                     <li><a href="#tabs-2">თამაშები</a></li>
                     <li><a href="#tabs-3">სოციალური ქსელი</a></li>
                     <li><a href="#tabs-4">პრაქტიკული</a></li>
-                    <li><a href="#tabs-5">რაღაც</a></li>
-                    <li><a href="#tabs-6">რუღაც</a></li>
+                    <li><a href="#tabs-5">ფოტო</a></li>
+                    <li><a href="#tabs-6">გასართობი</a></li>
                 </ul>
 
                 <div class="tab-container">
@@ -64,7 +64,8 @@
                             </thead>
                             <tbody>
                             <% appsList.forEach(function (thisApp) { %>
-                            <% if(thisApp.name === 'Viber' || thisApp.name === 'Clash Royale' || thisApp.name === 'Facebook' || thisApp.name === 'WhatsApp' || thisApp.name === 'Clash Of Clans') { %>
+                            <% if(thisApp.name === 'Viber' || thisApp.name === 'Clash Royale' || thisApp.name === 'Facebook'
+                                    || thisApp.name === 'WhatsApp' || thisApp.name === 'Clash Of Clans' || thisApp.name === 'Retrika') { %>
                             <tr class="admin-apps-img">
                                 <th><img src="<%= thisApp.icon %>"></th>
                                 <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
@@ -149,10 +150,52 @@
                         </table>
                     </div>
                     <div class="tab-content clearfix" id="tabs-5">
-
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>აპპ სახელი</th>
+                                <th>ვერსია</th>
+                                <th>განახლების თარიღი</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% appsList.forEach(function (thisApp) { %>
+                            <% if(thisApp.tag === 'ფოტო') { %>
+                            <tr class="admin-apps-img">
+                                <th><img src="<%= thisApp.icon %>"></th>
+                                <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
+                                <td><%= thisApp.version %></td>
+                                <td><%= thisApp.date.toDateString() %></td>
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="tab-content clearfix" id="tabs-6">
-
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>აპპ სახელი</th>
+                                <th>ვერსია</th>
+                                <th>განახლების თარიღი</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% appsList.forEach(function (thisApp) { %>
+                            <% if(thisApp.tag === 'გართობა') { %>
+                            <tr class="admin-apps-img">
+                                <th><img src="<%= thisApp.icon %>"></th>
+                                <td><a href="/app/show/<%= thisApp._id %>"><%= thisApp.name %></a></td>
+                                <td><%= thisApp.version %></td>
+                                <td><%= thisApp.date.toDateString() %></td>
+                            </tr>
+                            <% } %>
+                            <% }) %>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -171,7 +214,7 @@
                     <h4>ინსტრუქციები</h4>
 
                     <div class="widget-footer">
-                        <a href="/all-apps">ყველა ვიდეო</a>
+                        <a href="#">ყველა ვიდეო</a>
                     </div>
                 </div>
 

@@ -9,7 +9,7 @@ var Apps = require('../models/applications'),
     fileType       = require('file-type');
 
 
-router.get('/admin/app-list', function (req, res) {
+router.get('/admin/app-list', middleware.isLoggedIn, function (req, res) {
   Apps.find({}, function (err, app) {
     if(err){
       return console.log(err)
@@ -18,17 +18,17 @@ router.get('/admin/app-list', function (req, res) {
   });
 });
 
-router.get('/admin/app/new', function(req, res){
+router.get('/admin/app/new', middleware.isLoggedIn, function(req, res){
    res.render('admin/applications/new')
 });
 
 // SHOW
-router.get('/admin/app/:id', function(req, res){
+router.get('/admin/app/:id', middleware.isLoggedIn, function(req, res){
   // Apps.findById();
 });
 
 // EDIT
-router.get('/admin/app/:id/edit', function (req, res) {
+router.get('/admin/app/:id/edit', middleware.isLoggedIn, function (req, res) {
   Apps.findById(req.params.id, function (err, editApp) {
     if(err){
       res.send(err)
@@ -40,7 +40,7 @@ router.get('/admin/app/:id/edit', function (req, res) {
 
 
 // ADMIN SIDE
-router.post('/admin/app/new', function (req, res) {
+router.post('/admin/app/new', middleware.isLoggedIn, function (req, res) {
   var applicationData = req.body.app;
       applicationData.downloadLinks = req.body.downloadLinks;
       applicationData.author = {
@@ -53,7 +53,7 @@ router.post('/admin/app/new', function (req, res) {
           res.send(err);
         }else{
           req.flash('success', 'New Application Posted')
-          res.redirect('admin/app-list');
+          res.redirect('admin/applications/app-list');
         }
       });
 });
@@ -125,19 +125,19 @@ router.post('/app/upload', function(req, res){
 });
 
 
-router.put('/admin/app/:id/edit', function (req, res) {
+router.put('/admin/app/:id/edit', middleware.isLoggedIn, function (req, res) {
   var applicationData = req.body.app;
   applicationData.downloadLinks = req.body.downloadLinks;
   Apps.findByIdAndUpdate(req.params.id, applicationData, function (err, editedApp) {
     if( err ){
       res.send(err)
     }else{
-      res.redirect('back')
+      res.redirect('admin/applications/app_list')
     }
   })
 });
 
-router.delete('/admin/app/:id/delete', function (req, res) {
+router.delete('/admin/app/:id/delete', middleware.isLoggedIn, function (req, res) {
   Apps.findByIdAndRemove(req.params.id, function (err, delPost) {
     if( err ){
       res.send(error)

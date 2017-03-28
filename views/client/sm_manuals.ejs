@@ -56,10 +56,28 @@
                                     Play Market
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                             <% if(manual.os === "Android" && manual.tag === "მარკეტი") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -69,10 +87,28 @@
                                     Google სერვისი
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "ქლაუდი") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -82,10 +118,28 @@
                                     კონტაქტები
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "კონტაქტები") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -95,10 +149,28 @@
                                     ინტერნეტის კონფიგურაცია / გამოყენება
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "პარამეტრები") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -108,10 +180,28 @@
                                     დარეკვის პარამეტრები
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "დარეკვა") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -121,10 +211,28 @@
                                     სმს პარამეტრები
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "სმს") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -134,10 +242,28 @@
                                     გავერკვიოთ სმარტფონის მენიუში
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "მენიუ") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -147,10 +273,28 @@
                                     სხვადასხვა
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "Android" && manual.tag === "სხვადასხვა") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -161,23 +305,59 @@
                                     AppStore
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "მარკეტი") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
                             <div class="toggle toggle-border">
                                 <div class="togglet">
                                     <img src="../../uploads/staticResources/Icloud-icon.png">
-                                    iCloud და
+                                    iCloud
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "ქლაუდი") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -187,10 +367,28 @@
                                     კონტაქტები
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "კონტაქტები") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -200,10 +398,28 @@
                                     ინტერნეტის კონფიგურაცია / გამოყენება
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "პარამეტრები") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -213,10 +429,28 @@
                                     დარეკვის პარამეტრები
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "დარეკვა") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -226,10 +460,28 @@
                                     სმს პარამეტრები
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "სმს") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -239,10 +491,28 @@
                                     გავერკვიოთ სმარტფონის მენიუში
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "მენიუ") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
@@ -252,10 +522,28 @@
                                     სხვადასხვა
                                 </div>
                                 <div class="togglec">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima
-                                    odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
-                                    enim libero eaque explicabo suscipit animi
-                                    at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>სათაური</th>
+                                            <th>გამოყენებული სმარტფონი</th>
+                                            <th>სისტემის ვერსია</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% manu.forEach(function (manual) { %>
+                                        <% if(manual.os === "iOS" && manual.tag === "სხვადასხვა") { %>
+                                        <tr class="admin-instr-img">
+                                            <th><img src='<%= manual.billboard %>'></th>
+                                            <td><%= manual.title %></td>
+                                            <td><%= manual.brand + " " + manual.model %></td>
+                                            <td><%= manual.os_version %></td>
+                                        </tr>
+                                        <% } %>
+                                        <% }) %>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -291,7 +579,7 @@
                         <% }) %>
                     </div>
                         <div class="widget-footer">
-                            <a href="/all-apps">ყველა აპლიკაცია</a>
+                            <a href="/apps/apps-list">ყველა აპლიკაცია</a>
                         </div>
                 </div>
 

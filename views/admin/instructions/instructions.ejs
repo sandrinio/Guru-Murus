@@ -66,13 +66,13 @@
                                 <img src="<%= manual.billboard %>">
                             </div>
                             <div class="news-title">
-                                <a href="/admin/instructions/"><h4><%= manual.title %></h4></a>
+                                <a href="/admin/instructions/<%= manual._id %>"><h4><%= manual.title %></h4></a>
                             </div>
                             <div class="meta-line">
                                 <span><i class="fa fa-calendar" aria-hidden="true"> <%= manual.date.toDateString() %></i></span>
-                                <form action="/admin/instructions/?_method=DELETE" method="POST" id="edit-form">
+                                <form action="/admin/instructions/<%= manual._id %>?_method=DELETE" method="POST" id="edit-form">
                                     <button type="submit" class="label label-danger">Delete</button>
-                                    <a href="/admin/instructions/edit" class="label label-warning">edit</a>
+                                    <a href="/admin/instructions/<%= manual._id %>/edit" class="label label-warning">Edit</a>
                                 </form>
                             </div>
                         </div>

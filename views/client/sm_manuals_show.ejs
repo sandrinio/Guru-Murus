@@ -23,77 +23,80 @@
 
 </div>
 
-
 </header><!-- #header end -->
 
+<!-- facebook things -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '389823831395542',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
 
-    </header><!-- #header end -->
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1828802387394486";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Content
 ============================================= -->
-    <div class="container">
+<div class="container">
     <div class="row">
         <div class="col-md-9 col-sm-12" id="my-container">
-
             <!-- Post Content
             ============================================= -->
-                <div class="show-app-header">
-                    <div class="app-image-container">
-                        <img src="<%= app.icon %>" alt="<%= app.icon %>">
-                    </div>
-                    <div class="app-info">
-                          <h3><%= app.name %></h3>
-                        <table class="table table-condensed table-blockView">
-                            <tbody>
-                            <tr>
-                                <th>ვერსია</th>
-                                <td><%= app.version %></td>
-                            </tr>
-                            <tr>
-                                <th>ათვირთვის თარიღი</th>
-                                <td><%= app.date.toDateString() %></td>
-                            </tr>
-                            <tr>
-                                <th>გადმოწერა</th>
-                                <td><a href="<%= app.downloadLinks.local %>" download><span class="first-letter fl-hov">ლოკალური  ლინკი</span></a></td>
-                            </tr>
-                            <tr>
-                                <th>ოფიციალური</th>
-                                <td><a class="market-icons" href="<%= app.downloadLinks.playMarket %>" target="_blank"><img src="/uploads/staticResources/playstore-icon.png"></a><a
-                                                href="<%= app.downloadLinks.appStore %>" class="market-icons" target="_blank">
-                                        <img src="/uploads/staticResources/appstore-icon.png"></a></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
+            <div class="blog-title-container">
+                <div class="show-blog-header">
+                    <img src="<%= blogPost.billboard %>" alt="<%= blogPost.billboard %>">
+                    <div class="blabla">
+                        <ul class="entry-meta clearfix">
+                            <li><i class="icon-calendar3"></i><%= blogPost.date.toDateString() %></li>
+                            <li><a href="#"><i class="icon-user"></i><%= blogPost.author.fullname %></a></li>
+                            <li><i class="icon-folder-open"></i> <a href="#"><%=blogPost.tag%></a></li>
+                        </ul>
                         <div class="blog-share clearfix">
-                                <a href="#" class="social-icon si-borderless si-text-color si-facebook" id="shareBtn" title="Facebook">
-                                    <i class="icon-facebook"></i>
-                                    <i class="icon-facebook"></i>
-                                </a>
-                                <a href="#" class="social-icon si-borderless si-text-color si-twitter" title="Twitter">
-                                    <i class="icon-twitter"></i>
-                                    <i class="icon-twitter"></i>
-                                </a>
-                                <a href="#" class="social-icon si-borderless si-text-color si-youtube" title="Youtube">
-                                    <i class="icon-youtube"></i>
-                                    <i class="icon-youtube"></i>
-                                </a>
+                            <a href="#" class="social-icon si-borderless si-text-color si-facebook" id="shareBtn" title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-text-color si-twitter" title="Twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-text-color si-youtube" title="Youtube">
+                                <i class="icon-youtube"></i>
+                                <i class="icon-youtube"></i>
+                            </a>
                         </div>
-                    <div class="line"><h4><%= app.title %></h4></div>
+                    </div>
+                    <div class="line"><h4><%= blogPost.title %></h4></div>
                 </div>
+            </div>
 
-            <%- app.content %>
-             <!-- Comments
-			============================================= -->
+            <%- blogPost.content %>
+            <!-- Comments
+           ============================================= -->
             <div id="comments" class="clearfix">
-                <div class="fb-like" data-href="https://www.facebook.com/GsmGuruGeorgia/<%= app._id %>"
-                     data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
                 <!-- Facebook Comments
                 ============================================= -->
-                <div class="fb-comments" data-width="100%" data-href="https://guru-muru-sandrinio.c9users.io/client/app/show/<%= app._id %>" data-numposts="5" data-colorscheme="light"></div>
+                <div class="fb-comments" data-width="100%" data-href="https://gsmguru.ge/client/Hot-News/<%= blogPost._id %>" data-numposts="5" data-colorscheme="light"></div>
                 <!-- Facebook Comments end -->
             </div><!-- #comments end -->
 
@@ -112,7 +115,7 @@
                         <div class="spost clearfix">
                             <div class="entry-image">
                                 <a href="/app/show/<%= appData._id %>">
-                                    <img src="<%= appData.icon %>">
+                                    <img src="<%= appData.icon %>" >
                                 </a>
                             </div>
                             <div class="entry-c">
@@ -150,7 +153,7 @@
                     </div>
                 </div>
             </div><!-- .sidebar end -->
-            
+
         </div>
     </div>
 </div>
@@ -161,7 +164,7 @@
     FB.ui({
       method: 'share',
       display: 'popup',
-      href: 'https://gsmguru.ge/Hot-News/<%= app._id %>',
+      href: 'http://gsmguru.ge/Hot-News/<%= blogPost._id %>'
     }, function(response){});
   }
 </script>

@@ -245,29 +245,63 @@ desired effect
                                                class="form-control" id="inputTitle" placeholder="ვიდეოს ლინკი">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                        <label for="tag" class="col-sm-2 control-label">Tag</label>
-                                    <select multiple class="form-control" name="manual[tag]">
+
+                                <div class="block">
+                                    <label>Tag</label>
+                                    <select name="manual[tag]">
                                         <option>მარკეტი</option>
                                         <option>ქლაუდი</option>
                                         <option>კონტაქტები</option>
                                         <option>პარამეტრები</option>
                                         <option>დარეკვა</option>
                                         <option>სმს</option>
+                                        <option>მენიუ</option>
                                         <option>სხვადასხვა</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                        <label for="OS" class="col-sm-2 control-label">OS</label>
-                                    <select class="form-control" name="manual[os]">
+
+                                <div class="block">
+                                        <label>OS</label>
+                                    <select name="manual[os]">
                                         <option>other</option>
                                         <option>Android</option>
                                         <option>iOS</option>
                                     </select>
-
                                 </div>
 
-                                <div class="test-div">
+                                <div class="block">
+                                        <label>OS version</label>
+                                    <select name="manual[os_version]">
+                                        <optgroup label="Android"></optgroup>
+                                        <option>4.2-4.4</option>
+                                        <option>5.0-6.0</option>
+                                        <option>5.0-6.0</option>
+                                        <option>7.0-მიმდინარე</option>
+                                        <optgroup label="iOS"></optgroup>
+                                        <option>9.0</option>
+                                        <option>10-მიმდინარე</option>
+                                    </select>
+                                </div>
+
+                                <div class="block">
+                                         <label>Brand</label>
+                                    <select name="manual[brand]">
+                                        <option>Samsung</option>
+                                        <option>iPhone</option>
+                                        <option>Huawei</option>
+                                        <option>Lenovo</option>
+                                        <option>Google</option>
+                                        <option>LG</option>
+                                    </select>
+                                </div>
+                                <div class="block">
+                                        <label>Model</label>
+                                        <input type="text" name="manual[model]" placeholder="enter model">
+                                </div>
+
+
+
+                                <div class="ckeditor-div">
                                     <textarea class="form-control" name="manual[content]" rows="10"></textarea>
 
                                     <script>

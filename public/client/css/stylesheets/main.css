@@ -152,3 +152,11 @@
 #apps-tab-nav li{
     margin-left: 5px
 }
+
+.admin-apps-img img {
+    width: 30px;
+}
+
+.admin-instr-img img{
+    width: 100px;
+}

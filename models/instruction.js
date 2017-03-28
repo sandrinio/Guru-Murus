@@ -7,6 +7,9 @@ var manualsSchema = new mongoose.Schema({
   tag: {},
   video: {type: String, required: true},
   os: String,
+  os_version: String,
+  brand: String,
+  model: String,
   content: {type: String, required: true},
 
   author: {

@@ -10,8 +10,8 @@ var Manual = require('../models/instruction'),
   fileType       = require('file-type');
 
 
-router.get('/admin/instructions', function (req, res) {
-  Manual.find({}, function (err, manu) {
+router.get('/admin/instructions', middleware.isLoggedIn, function (req, res) {
+  Manual.find({}).sort('-date').exec(function (err, manu) {
     if(err){
       res.send(err);
     }else{
@@ -20,22 +20,28 @@ router.get('/admin/instructions', function (req, res) {
   });
 });
 
-router.get('/admin/instructions/new', function (req, res) {
+router.get('/admin/instructions/new', middleware.isLoggedIn, function (req, res) {
   res.render('admin/instructions/new')
 });
 
-router.get('/admin/instructions/:id', function (req, res) {
-  Manual.findById(req.params.id, function (err, manu) {
+router.get('/admin/instructions/:id/edit', middleware.isLoggedIn, function (req, res) {
+  Manual.findById(req.params.id, function (err, abc) {
     if(err){
       res.send(err)
     }else{
-      res.render('/client/instructions_show')
+      res.render('admin/instructions/edit', { manu: abc });
     }
   });
 });
 
-router.post('/admin/instructions', function (req, res) {
-  Manual.create(req.body.manual, function (err, createdManual) {
+router.post('/admin/instructions', middleware.isLoggedIn, function (req, res) {
+  var instrContent = req.body.manual;
+  instrContent.author = {
+    fullname: req.user.fullname,
+    pic: "",
+    id: req.user._id
+  };
+  Manual.create(instrContent, function (err, createdManual) {
     if(err){
       res.send(err)
     }else{
@@ -110,12 +116,24 @@ router.post('/manuals_upload', function (req, res) {
   });
 });
 
-router.put('/admin/instructions/:id/edit', function (req, res) {
-  res.render('/admin/instructions/edit')
+router.put('/admin/instructions/:id', middleware.isLoggedIn, function (req, res) {
+  Manual.findByIdAndUpdate(req.params.id, req.body.manual, function (err, manual) {
+    if(err){
+      res.send("err")
+    }else{
+      res.redirect('/admin/instructions')
+    }
+  });
 });
 
-router.delete('/admin/instructions/:id', function (req, res) {
-
+router.delete('/admin/instructions/:id', middleware.isLoggedIn, function (req, res) {
+  Manual.findByIdAndRemove(req.params.id, function (err, instruction) {
+    if(err){
+      console.log(err)
+    }else{
+      res.redirect("/admin/admin-panel");
+    }
+  });
 });
 
 module.exports = router;

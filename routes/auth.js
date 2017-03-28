@@ -9,11 +9,11 @@ router.get('/admin/login', function (req, res) {
   res.render('admin/auth/login');
 });
 
-router.get('/admin/register', middleware.isLoggedIn, function (req, res) {
+router.get('/admin/register', middleware.permissionChecker, function (req, res) {
   res.render('admin/auth/register')
 });
 
-router.post('/admin/register', function (req, res) {
+router.post('/admin/register', middleware.isLoggedIn, function (req, res) {
   if(req.body.password === req.body.pass2) {
     var userInfo = req.body.user;
     userInfo.pic = 'user-icon.png';

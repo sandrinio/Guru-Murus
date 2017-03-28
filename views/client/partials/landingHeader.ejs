@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="../../../client/css/stylesheets/w3.css" type="text/css" />
     <link rel="stylesheet" href="../../../client/css/stylesheets/main.css" type="text/css" />
     <link rel="stylesheet" href="../../../client/css/arial-geo.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../client/images/favicon.ico" />
+
+    <!--geo fonts rioni-->
+    <link rel="stylesheet" href="../../../client/css/fonts/bpg-rioni-arial-master/css/bpg-rioni-arial.css">
+    <link rel="stylesheet" href="../../../client/css/fonts/bpg-rioni-contrast-master/css/bpg-rioni-contrast.css">
 
 
     <link rel="stylesheet" href="../../../client/css/responsive.css" type="text/css" />
@@ -31,6 +36,25 @@
 </head>
 
 <body class="stretched">
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '389823831395542',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <!-- Document Wrapper
 ============================================= -->

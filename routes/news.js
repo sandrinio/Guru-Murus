@@ -28,7 +28,7 @@ router.get('/admin/news/new', middleware.isLoggedIn, function (req, res) {
 });
 
 
-router.get('/admin/hotNews/:id', function (req, res) {
+router.get('/admin/hotNews/:id', middleware.isLoggedIn, function (req, res) {
   News.findById(req.params.id, function (err, post) {
     if(err){
       console.log(err)
@@ -38,7 +38,7 @@ router.get('/admin/hotNews/:id', function (req, res) {
   });
 });
 
-router.get('/admin/news/:id/edit', function (req, res) {
+router.get('/admin/news/:id/edit', middleware.isLoggedIn, function (req, res) {
   News.findById(req.params.id, function (err, blogPost) {
     if(err){
       console.log(err)
@@ -131,7 +131,7 @@ router.post('/news/new/blogPost', middleware.isLoggedIn, function(req, res){
   });
 });
 
-router.put('/admin/news/:id', function(req, res){
+router.put('/admin/news/:id', middleware.isLoggedIn, function(req, res){
   var updatePostContent = req.body.blogPost;
   News.findByIdAndUpdate(req.params.id, updatePostContent, function(err, updatedPost){
     if(err){
@@ -142,7 +142,7 @@ router.put('/admin/news/:id', function(req, res){
   });
 });
 
-router.delete('/admin/news/:id', function (req, res) {
+router.delete('/admin/news/:id', middleware.isLoggedIn, function (req, res) {
   News.findByIdAndRemove(req.params.id, function (err, blogPost) {
     if(err){
       console.log(err)

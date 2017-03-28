@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BPG Rioni Contrast';
+    src: url('../fonts/bpg-rioni-contrast-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-rioni-contrast-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-rioni-contrast-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-rioni-contrast-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-rioni-contrast-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-rioni-contrast-webfont.svg#bpg_rioni_contrastregular') format('svg'); /* Legacy iOS */
+}
