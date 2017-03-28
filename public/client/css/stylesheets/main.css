@@ -52,7 +52,8 @@
 
 .app-image-container {
     float: left;
-    margin: 0 10px 25px 0
+    margin: 0 10px 25px 0;
+    max-width: 100px;
 }
 
 .app-info {
