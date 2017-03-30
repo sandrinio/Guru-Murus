@@ -58,7 +58,6 @@ app.use(session({
     app.use(instructionsRoutes);
 
 mongoose.Promise = global.Promise;
-
 mongoose.connect("mongodb://sandrinio:kukuruku321@ds157839.mlab.com:57839/gsm-guru");
 // mongoose.connect("mongodb://localhost/gsm_guru");
 
