@@ -33,7 +33,7 @@
 
 .hover-effect:hover {
     transition-duration: .35s;
-    color: #1ABC9C;
+    color: #1da1f2;
 }
 
 .sidebar-margins {
@@ -84,12 +84,12 @@
 }
 
 .active-link {
-    border-bottom: solid 2px #1ABC9C;
+    border-bottom: solid 2px #1da1f2;
 }
 
 .first-letter {
     font-weight: 800;
-    color: #1ABC9C;
+    color: #1da1f2;
 }
 
 .widget-footer a {
@@ -101,7 +101,7 @@
 }
 
 .widget-footer a:hover {
-    color: #1ABC9C;
+    color: #1da1f2;
 }
 
 .social-share {
@@ -123,7 +123,7 @@
 }
 
 #app-h4-color:hover {
-    color: #1ABC9C;
+    color: #1da1f2;
 }
 
 .market-icons img {
@@ -137,7 +137,7 @@
 }
 
 .fl-hov:hover {
-    color: #1a9273;
+    color: #1da1f2;
 }
 
 .togglet img {

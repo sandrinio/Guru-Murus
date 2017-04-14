@@ -30,5 +30,16 @@ router.get('/Hot-News/:id', function (req, res) {
   });
 });
 
+router.get('/searchNews', function (req, res) {
+  News.find({'title': req.query.q}, function (err, foundNews) {
+    if(err){
+      console.log(err)
+    }else{
+      console.log(req.query.q);
+      res.send(foundNews)
+    }
+  })
+});
+
 
 module.exports = router;
