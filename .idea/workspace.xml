@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="349fe97b-c4d2-4511-ba26-c487a6d252ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/images/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/images/videos/gsmguru-intro.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/client/images/videos/gsmguru-intro.webm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codekeeper.ejs" afterPath="$PROJECT_DIR$/codekeeper.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/css/dark.css" afterPath="$PROJECT_DIR$/public/client/css/dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/css/responsive.css" afterPath="$PROJECT_DIR$/public/client/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/css/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/client/css/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/client/css/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/client/css/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/news_client.js" afterPath="$PROJECT_DIR$/routes/news_client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/client/clientLanding.ejs" afterPath="$PROJECT_DIR$/views/client/clientLanding.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/client/partials/header_1.ejs" afterPath="$PROJECT_DIR$/views/client/partials/header_1.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/client/partials/header_2.ejs" afterPath="$PROJECT_DIR$/views/client/partials/header_2.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,7 +38,7 @@
       <file leaf-file-name="news_client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/news_client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="453">
               <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
               <folding />
             </state>
@@ -75,51 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/auth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/news.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="136" column="12" lean-forward="true" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applications_client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/applications_client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="7" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="48" selection-end-column="7" />
+            <state relative-caret-position="310">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -146,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/routes/landing.js" />
         <option value="$PROJECT_DIR$/public/admin/plugins/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/views/admin/auth/register.ejs" />
@@ -182,7 +141,6 @@
         <option value="$PROJECT_DIR$/views/client/news_show.ejs" />
         <option value="$PROJECT_DIR$/views/client/apps_show.ejs" />
         <option value="$PROJECT_DIR$/views/client/apps_showroom.ejs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/client/css/dark.css" />
         <option value="$PROJECT_DIR$/public/client/css/responsive.css" />
         <option value="$PROJECT_DIR$/public/client/css/stylesheets/main.css" />
@@ -193,6 +151,8 @@
         <option value="$PROJECT_DIR$/views/client/partials/header_2.ejs" />
         <option value="$PROJECT_DIR$/models/news.js" />
         <option value="$PROJECT_DIR$/routes/news_client.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -228,7 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -241,90 +200,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Guru-Murus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -508,16 +386,17 @@
       <workItem from="1491847800362" duration="170000" />
       <workItem from="1491853973092" duration="1567000" />
       <workItem from="1492117188711" duration="56000" />
-      <workItem from="1492158369526" duration="11000" />
+      <workItem from="1492158369526" duration="155000" />
+      <workItem from="1492346061555" duration="2000" />
+      <workItem from="1493187264560" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91489000" />
+    <option name="totallyTimeSpent" value="92210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25655282" sideWeight="0.492126" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -526,7 +405,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25403818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25403818" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39060205" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18268467" sideWeight="0.507874" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -562,13 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
           <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -812,14 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/client/partials/header_1.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -841,18 +705,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="7" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="48" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/applications_client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="129" column="9" lean-forward="false" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -865,18 +737,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/partials/header_2.ejs">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="150">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/news.js">
+    <entry file="file://$PROJECT_DIR$/views/client/partials/header_2.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -891,16 +763,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/news_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="453">
           <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/news.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="136" column="12" lean-forward="true" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
+        <state relative-caret-position="310">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
